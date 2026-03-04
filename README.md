@@ -1,62 +1,64 @@
-# OCR Document Processing Pipeline
+# AI Intelligent Document Processing Platform
 
-A comprehensive document processing application that extracts text, entities, and generates summaries from PDFs and images using enhanced Marker integration, Surya OCR, IndIC BERT, and Groq AI.
+AI-powered multilingual document intelligence platform built using **Surya OCR**, **LLM-based entity extraction**, and **MongoDB search**.
 
-![IDP Architecture](./IDP_OCR.jpeg)
+🏆 **Winner – India AI for All Challenge 2026**
 
+Presented at **India AI Summit 2026 – New Delhi**
 
-## Features
+---
 
-- **Multi-format Support**: PDF, JPG, JPEG, PNG, TIFF, BMP
-- **Intelligent Processing**: Digital PDFs via Marker, scanned documents via Surya OCR
-- **Multilingual Support**: Detects and translates Indian languages to English
-- **Advanced Entity Extraction**: AI-powered extraction with Groq LLM
-- **Interactive Visualization**: Hover-enabled bounding boxes with detailed metadata
-- **MongoDB Storage**: Persistent storage of documents and extractions
-- **Web Interface**: Multi-mode Streamlit GUI
+## Key Features
 
-##  Installation
+• Advanced OCR using Surya OCR  
+• Handles faded and noisy government documents  
+• Multilingual text detection and translation  
+• AI-powered entity extraction using LLM (Groq + Llama 3)  
+• Document search using MongoDB  
+• Multi-page navigation with bounding boxes  
+• Batch document processing  
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/BharatDBPG/India-AI-Intelligent-Document-Processing
-   cd ocr
-   ```
+---
 
-2. **Run setup script**:
-   ```bash
-   ./setup.sh
-   ```
+## System Architecture
 
-3. **Configure API keys**:
-   ```bash
-   # Update .streamlit/secrets.toml with your Groq API key
-   GROQ_API_KEY = "your_key_here"
-   ```
+![Architecture](docs/architecture.png)
 
-4. **Start the application**:
-   ```bash
-   ./start_app.sh
-   ```
+---
 
-##  Usage
+## Technology Stack
 
-Access the web interface at `http://localhost:8501` and use the four main tabs:
-- **Upload & Process**: Upload and process documents
-- **Analysis Results**: View extracted entities and translations
-- **Document Viewer**: Interactive document visualization with bounding boxes
-- **Search Documents**: Search across processed documents
+| Component | Technology |
+|--------|--------|
+Frontend | Streamlit |
+OCR Engine | Surya OCR |
+LLM Analysis | Groq Llama 3 |
+Translation | Google Translator API |
+Database | MongoDB |
+Language Detection | Langdetect |
 
-##  Requirements
+---
 
-- Python 3.8+
-- MongoDB
-- Groq API key
+## Project Workflow
 
-## 📄 License
+1️⃣ Upload documents (PDF / Images)
 
-MIT License
+2️⃣ OCR Processing using Surya
 
-## 🤝 Contributing
+3️⃣ Text Translation to English
 
-Pull requests are welcome. For major changes, please open an issue first.
+4️⃣ Entity Extraction using LLM
+
+5️⃣ Store results in MongoDB
+
+6️⃣ Search documents using keywords
+
+---
+
+## Installation
+
+Clone repository
+
+```bash
+git clone https://github.com/yourusername/ai-intelligent-document-processing.git
+cd ai-intelligent-document-processing
